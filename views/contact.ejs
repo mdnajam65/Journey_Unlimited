@@ -1,0 +1,65 @@
+<%- include("partials/header.ejs") %>
+
+  <!-- <div class="outer-form">
+    <div class="inner-form">
+      <form>
+        <label>Name</label>
+        <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+        <label for="email">Email</label>
+        <input name="email" type="email" class="feedback-input emphone" placeholder="Email" required />
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="feedback-input emphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <label for="feedback-input">Feedback</label>
+        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </div>
+    <div class="contact-div">
+      <h1>Contact Us</h1>
+      <p>
+        Whether you have questions, feedback, or need assistance, feel free to reach us via given contact information
+        below.
+      </p>
+      <img src="images/call.png" alt="">
+      <p>+8542903099</p>
+      <img src="images/email.png" alt="">
+      <a href="mailto:mohdnajam065@gmail.com">mohdnajam065@gmail.com</a>
+
+      <img src="images/location.png" alt="">
+      <p>Jamia Nagar New Delhi, Delhi-110025</p>
+    </div>
+  </div> -->
+
+  <div class="main-container">
+    <div>
+      <form class="form-container">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <div class="one-row">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h2>Contact <span>Us</span></h2>
+      <p>For questions, technical assistance, or collaboration opportunities via the contact information provided.</p>
+      <div class="contact-details">
+        <p><i class="fas fa-phone"></i> +91-8542903099</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:hello@reallygreatsite.com">mohdnajmuddin8542@gmail.com</a>
+        </p>
+        <p><i class="fas fa-map-marker-alt"></i> Jamia Nagar New Delhi,Delhi-11025</p>
+      </div>
+    </div>
+  </div>
+  <%- include("partials/footer.ejs")%>
